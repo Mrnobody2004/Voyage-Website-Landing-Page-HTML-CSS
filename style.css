@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section__container {
+    padding: 5rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section__title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #669ccb;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section__subtitle {
+    font-size: 1rem;
+    font-style: italic;
+    color: #669ccb;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 2rem;
+}
+
+.nav__logo a {
+    text-decoration: none;
+    color: #f3f4f6;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 2rem;
+}
+
+.nav__links {
+    display: none;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav__links a {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.nav__links a:hover {
+    color: #669ccb;
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(45, 92, 132, 0.5), rgba(45, 92, 132, 0.5)), url("/anthony-delanoix-QAwciFlS1g4-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f3f4f6;
+}
+
+.header__container {
+    max-width: 600px;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+header a button {
+    background-color: #f3f4f6;
+    color: #333;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header__container button {
+    color: white;
+    background-color: #63a2da;
+    border-radius: 0.5rem;
+}
+
+header a button:hover {
+    background-color: #669ccb;
+}
+
+.journey__container {
+    background-color: #f3f4f6;
+}
+
+.journey__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.country__card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.country__card img {
+    transition: transform 0.3s ease;
+}
+
+.country__card:hover img {
+    transform: scale(1.05);
+}
+
+.country__name {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.country__name i {
+    color: #669ccb;
+    margin-right: 0.5rem;
+}
+
+.country__name span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.banner__container {
+    background-image: linear-gradient(rgba(45, 92, 132, 0.5), rgba(45, 92, 132, 0.5)), url("/big-dodzy-6T6btHPbdLk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #f3f4f6;
+    padding: 5rem 1rem;
+}
+
+.banner__content {
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+}
+
+.banner__content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.banner__content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.banner__content button {
+    background-color: #669ccb;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0.5rem;
+}
+
+.banner__content button:hover {
+    background-color: #507a9e;
+}
+
+.why-choose-us__container {
+    background-color: #ffffff;
+    padding: 5rem 1rem;
+}
+
+.why-choose-us__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.why-choose-us__item {
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.why-choose-us__item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.why-choose-us__content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.why-choose-us__content h3 {
+    font-size: 1.2rem;
+    color: #669ccb;
+    margin-bottom: 0.5rem;
+}
+
+.why-choose-us__content p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: #f3f4f6;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+footer h4 a {
+  color: white;
+  text-decoration: none;
+}
+footer .social__icons a {
+  color: #f3f4f6;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+footer .social__icons a:hover {
+  color: #669ccb;
+}
+
+
+footer p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 640px) {
+    .nav__links {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    header a button {
+        font-size: 1.2rem;
+    }
+
+    .banner__content h2 {
+        font-size: 2.5rem;
+    }
+
+    .banner__content p {
+        font-size: 1.2rem;
+    }
+
+    .banner__content button {
+        font-size: 1.2rem;
+    }
+
+    .why-choose-us__grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+
+
+
+
